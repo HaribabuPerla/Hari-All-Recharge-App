@@ -1,0 +1,24 @@
+
+$ftbg:#3a9cde;
+
+.container{
+   flex:1 ;
+
+}
+.loginContainer{
+    flex:10;
+}
+.footer{
+    flex:1;
+    background-color:$ftbg;
+    padding: 0  20px;
+    border-width:2px;
+    border-color:orange;
+    border-style:dotted;
+    justify-content: center;
+ 
+}
+.footerText{
+    color:white;
+    font-size: 18;
+}

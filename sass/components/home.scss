@@ -1,0 +1,46 @@
+
+.homeContainer{
+    margin:20px
+}
+
+.gapContainer{
+  margin-top:20px
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.imageStyle{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-bottom: 20;
+    border-width: 2px;
+    border-color: black;
+
+}
+.btnStyle{
+    background-color:blue;
+    border-width:2px;
+    border-color:white;
+    margin-top:20px;
+    padding:10px;
+
+    border-radius:10px;
+     min-width:180px
+}
+
+.btnTxtStyle{
+    color:white;
+    text-align:center;
+    font-size:16px;
+
+}
+.link {
+    color: blue;
+    // text-decoration-line: "underline",
+  }
