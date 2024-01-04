@@ -32,14 +32,15 @@ export default function Recharge() {
     ]);
   
     return (
-  
-      <TabView
-        navigationState={{ index, routes }}
-        renderScene={renderScene}
-        onIndexChange={setIndex}
-        initialLayout={{ width: layout.width }}
-        style={{marginTop:20}}
-      />
+      <RechargeHome listData={DTH_DATA}/>
+      
+      // <TabView
+      //   navigationState={{ index, routes }}
+      //   renderScene={renderScene}
+      //   onIndexChange={setIndex}
+      //   initialLayout={{ width: layout.width }}
+      //   style={{marginTop:20}}
+      // />
    
     );
 }
