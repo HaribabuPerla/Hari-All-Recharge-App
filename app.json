@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "bus-app",
-    "slug": "bus-app",
+    "name": "hari-recharge",
+    "slug": "hari-recharge",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,14 +18,20 @@
       "supportsTablet": true
     },
     "android": {
-      "softwareKeyboardLayoutMode" : "pan",
+      "softwareKeyboardLayoutMode": "pan",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.haribabuperla.busapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9feaf1c9-2384-41e6-9250-3705850bfce7"
+      }
     }
   }
 }

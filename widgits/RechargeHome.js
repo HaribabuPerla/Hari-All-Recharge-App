@@ -92,7 +92,6 @@ export default function Recharge({listData}){
     },[route])
 
     const renderDetails=(item)=>{
-      console.log("amount",item)
         return(
             <>
             <View style={[styles.statusContainer,item.status=="Failed" && styles.statusBg]}>
