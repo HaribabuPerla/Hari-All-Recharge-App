@@ -12,7 +12,7 @@ export default function Input(props){
           value={value}
           onChangeText={(event)=> changeHandler(event,placeholder)}
           placeholder={placeholder}
-          style={InputStyles.inputClass}
+          style={styleInput ? styleInput : InputStyles.inputClass}
           keyboardType={keyboardType ? keyboardType:"default"}
           secureTextEntry={isSecure}
         
@@ -21,7 +21,7 @@ export default function Input(props){
           {
             type == "password" &&
             <Pressable   onPress={iconHandler}>
-               <Ionicons style={InputStyles.icon}  name={isSecure ? "eye-off-outline" :"eye-outline"} size={30} />
+            <Ionicons style={InputStyles.icon}  name={isSecure ? "eye-off-outline" :"eye-outline"} size={30} />
             </Pressable>
           }
         </View>

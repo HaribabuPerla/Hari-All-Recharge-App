@@ -1,0 +1,66 @@
+
+.balanceContainer{
+    flex:1;
+    flex-direction:row;
+    justify-content:flex-end;
+    margin-top: 10px;
+  
+}
+.balance{
+    font-size:20px;
+    color:blue;
+}
+
+.rechargeContainer{
+    flex:6;
+}
+
+.gapContainer{
+    margin:5px 20px;
+
+}
+.inputField{
+    padding: 8px 6px;
+    border-color:black;
+    border-bottom-width:2px;
+    font-size: 20px;
+    margin-top:10px;
+    color:blue;
+    margin:20px 0;
+    
+  
+    }
+
+.btnContainer{
+        margin:10px;
+        flex-direction:row;
+        gap:20px
+    }
+
+    .viewPlansBtnContainer{
+        background-color: #345eeb;
+        border-radius:10px;
+        border:1px solid white;
+        padding:10px;
+        min-width: 180px;
+
+}
+
+.submitBtnContainer{
+    background-color: #08bf26;
+    border-radius:10px;
+    border:1px solid white;
+    padding:10px;
+    min-width: 180px;
+ 
+ 
+ }
+.viewBtnTxt{
+    color:white;
+    text-align: center;
+}
+
+.historyContainer{
+    flex:6
+}
+
