@@ -107,6 +107,7 @@ export default function Recharge({listData}){
 
     return(
         <View style={{flex:1}}>
+       
 
  
         <View style={RechargeHomeStyles.balanceContainer}>
