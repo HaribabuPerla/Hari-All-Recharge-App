@@ -5,15 +5,15 @@ import RechargeHome from '../widgits/RechargeHome';
 import { OPERATOR_DATA, DTH_DATA } from "../constants/data";
 
 const FirstRoute = () => (
-  <View style={{ flex: 1,}}>
+  // <View style={{ flex: 1,}}>
     <RechargeHome listData={OPERATOR_DATA}/>
-</View>
+// </View>
 );
 
 const SecondRoute = () => (
-  <View style={{ flex: 1,  }} >
+  // <View style={{ flex: 1,  }} >
         <RechargeHome listData={DTH_DATA}/>
- </View>
+//  </View>
 
 
 );
@@ -32,15 +32,15 @@ export default function Recharge() {
     ]);
   
     return (
-      <RechargeHome listData={DTH_DATA}/>
+      // <RechargeHome listData={DTH_DATA}/>
       
-      // <TabView
-      //   navigationState={{ index, routes }}
-      //   renderScene={renderScene}
-      //   onIndexChange={setIndex}
-      //   initialLayout={{ width: layout.width }}
-      //   style={{marginTop:20}}
-      // />
+      <TabView
+        navigationState={{ index, routes }}
+        renderScene={renderScene}
+        onIndexChange={setIndex}
+        initialLayout={{ width: layout.width }}
+        style={{marginTop:20}}
+      />
    
     );
 }
