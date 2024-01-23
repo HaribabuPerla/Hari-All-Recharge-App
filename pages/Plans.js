@@ -1,12 +1,25 @@
 import { Text ,View,StyleSheet, FlatList, Pressable} from "react-native";
 import { RECHARGE_PLANS } from "../constants/data";
+import { useEffect, useState} from "react";
+import axios from "axios";
+
 export default function Plans({navigation}){
+    const [planData,setPlanData]=useState([])
+    useEffect(() => {
+        axios.get("http://10.0.2.2:4000/get-plans").then((response) => {
+            setPlanData(response.data)
+
+        }).catch((err)=>{
+            console.log("1234",err)
+        });
+      }, []);
 
     const cardPresshandler=(item)=>{
         navigation.navigate("Recharge",{amount:item});
     }
      
     const renderDetails=(item)=>{
+        
         return(
             <Pressable style={styles.card} onPress={()=>cardPresshandler(item)}>
                 <Text style={styles.planAmount}>{`₹${item.amount}`}</Text>
@@ -20,8 +33,8 @@ export default function Plans({navigation}){
     return(
         <View style={styles.container}>
            <FlatList
-            data={RECHARGE_PLANS}
-            keyExtractor={(item)=>item.id}
+            data={planData}
+            keyExtractor={(item)=>item.value}
             renderItem={(item)=>renderDetails(item.item)}
            
            />

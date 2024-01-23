@@ -39,8 +39,10 @@ export default function Recharge() {
         renderScene={renderScene}
         onIndexChange={setIndex}
         initialLayout={{ width: layout.width }}
-        style={{marginTop:20}}
+        style={{marginTop:30}}
+       
       />
+   
    
     );
 }
