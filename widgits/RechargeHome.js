@@ -94,11 +94,11 @@ export default function Recharge({listData}){
     const renderDetails=(item)=>{
         return(
             <>
-            <View style={[styles.statusContainer,item.status=="Failed" && styles.statusBg]}>
-            <Text style={styles.stText}>{item.sim || "NA"} </Text>
-            <Text style={styles.stText}>{item.num || "NA"}</Text>
-            <Text style={styles.stText}>{`₹ ${item.bal}`}</Text>
-            <Text style={styles.stText}>{item.status}</Text>
+            <View style={[RechargeHomeStyles.statusContainer,item.status=="Failed" && RechargeHomeStyles.statusBg]}>
+            <Text style={RechargeHomeStyles.stText}>{item.sim || "NA"} </Text>
+            <Text style={RechargeHomeStyles.stText}>{item.num || "NA"}</Text>
+            <Text style={RechargeHomeStyles.stText}>{`₹ ${item.bal}`}</Text>
+            <Text style={RechargeHomeStyles.stText}>{item.status}</Text>
             </View>
             </>
         )
@@ -172,8 +172,8 @@ export default function Recharge({listData}){
         
     { rechargeData.length > 0 &&
     
-      <View style={styles.flatContainer}>
-      <Text style={styles.rcgHead}>Recharge History</Text>
+      <View style={RechargeHomeStyles.flatContainer}>
+      <Text style={RechargeHomeStyles.rcgHead}>Recharge History</Text>
       <FlatList
       data={rechargeData}
       keyExtractor={(item)=>item.id}
@@ -192,51 +192,4 @@ export default function Recharge({listData}){
     )
 }
 
-const styles=StyleSheet.create({
-  
-   
- 
-   
-  
-    rcgHead:{
-        color:"#fcba03",
-        textDecorationLine:"underline",
-        fontSize:18,
-        fontWeight:'bold',
-        fontStyle:'italic',
-        
-        
-       
-    },
-  
-   
-   
-   
-  
-    
-   
-    statusContainer:{
-    
-        flexDirection:'row',
-        justifyContent:'space-around',
-        backgroundColor:'green',
-        borderRadius:5,
-        paddingVertical:5,
-        marginTop:20,
-    
-    },
-    stText:{
-      color:'white'
-    },
-    statusBg:{
-        backgroundColor:"red"
-    },
-    flatContainer:{
-        backgroundColor:'#a748fa',
-        padding:10,
-        borderRadius:10,
-        flex:1
-    }
- 
-  })
 

@@ -12,7 +12,7 @@
 }
 
 .rechargeContainer{
-    flex:6;
+    flex:10;
 }
 
 .gapContainer{
@@ -34,7 +34,8 @@
 .btnContainer{
         margin:10px;
         flex-direction:row;
-        gap:20px
+        gap:10px;
+        justify-content: center;
     }
 
     .viewPlansBtnContainer{
@@ -62,5 +63,39 @@
 
 .historyContainer{
     flex:6
+}
+
+
+
+  
+.rcgHead{
+    color:#fcba03;
+    text-decoration:underline;
+    font-size:18px;
+    font-weight:bold;
+    font-style:italic
+}
+
+.statusContainer{
+
+    flex-direction:row;
+    justify-content:space-around;
+    background-color:green;
+    border-radius:5px;
+    padding:5px 0;
+    margin-top:20px;
+
+}
+.stText{
+  color:white
+}
+.statusBg{
+    background-color:red;
+}
+.flatContainer{
+    background-color:#a748fa;
+    padding:10px;
+    border-radius:10px;
+    flex:1
 }
 

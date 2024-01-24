@@ -118,6 +118,7 @@ export default function Home(props){
                 iconHandler={iconHandler}
                 keyboardType="numeric"
                 changeHandler={changeHandler}
+                value={pwd}
               
               /> 
             </View>
@@ -131,7 +132,7 @@ export default function Home(props){
                 />
               
           {isLogin ? (
-            <Text>
+            <Text style={HomeStyles.mt10}>
               {" "}
               If You Don't have account try to{" "}
               <Text style={HomeStyles.link} onPress={linkHandler}>
@@ -139,7 +140,7 @@ export default function Home(props){
               </Text>
             </Text>
           ) : (
-            <Text>
+            <Text style={HomeStyles.mt10}>
               {" "}
               If You have account try to{" "}
               <Text style={HomeStyles.link} onPress={linkHandler}>

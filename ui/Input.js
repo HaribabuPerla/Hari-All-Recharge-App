@@ -19,7 +19,7 @@ export default function Input(props){
         />
         <View style={{position:'relative'}}>
           {
-            type == "password" &&
+            type == "password" && value?.length > 0 &&
             <Pressable   onPress={iconHandler}>
             <Ionicons style={InputStyles.icon}  name={isSecure ? "eye-off-outline" :"eye-outline"} size={30} />
             </Pressable>
@@ -30,18 +30,3 @@ export default function Input(props){
         
     )
 }
-
-// const styles=StyleSheet.create({
-  
-//     inputClass:{
-//     paddingVertical: 8,
-//     paddingHorizontal: 6,
-//     borderColor:'black',
-//     borderWidth:2,
-//     borderRadius: 10,
-//     fontSize: 16,
-//     marginTop:20
-  
-//     },
-   
-//   })

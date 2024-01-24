@@ -33,7 +33,7 @@ export default function Plans({navigation}){
     return(
         <View style={styles.container}>
            <FlatList
-            data={planData}
+            data={RECHARGE_PLANS}
             keyExtractor={(item)=>item.value}
             renderItem={(item)=>renderDetails(item.item)}
            
