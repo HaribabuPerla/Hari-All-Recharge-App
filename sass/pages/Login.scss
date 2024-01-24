@@ -1,5 +1,5 @@
 
-$ftbg:#3a9cde;
+$ftbg:#265777;
 
 .container{
    flex:1 ;
@@ -15,11 +15,12 @@ $ftbg:#3a9cde;
     border-width:2px;
     border-color:orange;
     border-style:dotted;
-    justify-content: center;
     width:100%
  
 }
 .footerText{
     color:white;
     font-size: 18;
+    text-align: center;
+    margin-top: 15px;
 }

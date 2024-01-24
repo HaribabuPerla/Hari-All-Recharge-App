@@ -47,7 +47,7 @@ export default function Home(props){
             if (validataion) {
               navigation.navigate("Recharge");
             } else {
-              Alert.alert("Please Enter correct details");
+              Alert.alert("Login Failed","Please Enter correct details");
             }
           } else {
             if (name && number && pwd) {
@@ -73,7 +73,7 @@ export default function Home(props){
               )
               
             } else {
-              Alert.alert("Please Enter correct details");
+              Alert.alert("Signup Failed","Please Enter correct details");
             }
           }
     }
